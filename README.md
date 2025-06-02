@@ -12,17 +12,18 @@ Mucosal immunity provides efficient protection against upper-airway infections, 
 
 **Introduction to Our Script Compilation for Analysis**
 
-In our comprehensive analysis of antifungal treatment in the MMC cohort, we have organized our scripts into six distinct chapters. Each chapter focuses on a specific aspect of the analysis, enabling a detailed examination of different facets of antifungal treatment effects in IBD. Below is a guide to the content of each chapter:
+This script compilation was developed to support a comprehensive analysis of single-cell RNA sequencing (scRNA-seq) and immune repertoire (BCR/TCR) profiling from mouse lung tissues following immunization with an Ad5-based COVID-19 vaccine formulation (Ad5XBB.1.5+RBDXBB.1.5-HR). The study includes three experimental groups: (1) PBS-treated controls, (2) wild-type mice immunized with the vaccine, and (3) *Sting*-deficient mice that also received the vaccine. Forty-eight hours after the final immunization, lung tissues were harvested, enzymatically dissociated into single-cell suspensions, and subjected to single-cell transcriptome and VDJ sequencing using the 10x Genomics Chromium platform, followed by sequencing on an Illumina NovaSeq.
+
+The accompanying scripts are organized into modular chapters that mirror the experimental and analytical pipeline, from raw data preprocessing to advanced visualization and cell type annotation. Each chapter is designed for reproducibility and scalability across additional datasets.
 
 - **[Chapter 0](Chapter0.md): Pre-processing of scRNA data**
-  - Content: Initial processing steps for scRNA-seq, scTCR-seq, and scSpatial datasets, including data cleaning, normalization, and quality control.
-  
-- **[Chapter 1](Chapter1.md): scRNA-seq Analysis **
-  - **Content:** Scripts for analyzing scRNA-seq data.
+  - This chapter includes scripts for initial processing of scRNA-seq and scVDJ-seq datasets, such as file organization, Cell Ranger count and VDJ alignment, and extraction of gene expression matrices and clonotype annotations.
+- **[Chapter 1](Chapter1.md): scRNA-seq Analysis**
+  - **Content:** This section presents the full scRNA-seq analysis workflow, including data filtering (via `miQC`), normalization, dimensionality reduction (UMAP, tSNE, PHATE, ForceAtlas2), unsupervised clustering, and manual annotation using curated marker gene panels. Additional analyses include dot plot visualizations of lineage-specific genes, identification of differentially expressed genes, and integrated exploration of B and T cell subtypes.
   
 
 
-Each chapter contains detailed scripts, methodologies, and analyses relevant to the specific aspect of Intranasal vaccine. This structured approach allows researchers to navigate our comprehensive analysis with ease, enhancing their understanding of Intranasal vaccine.
+This curated pipeline enables in-depth characterization of immune cell populations in the lung microenvironment and facilitates comparison across immunization strategies and genetic backgrounds.
 
 # **2. Raw data download**
 
@@ -66,7 +67,7 @@ Below is a detailed annotation of the file structure and contents:
 
 # **3. Processed Data Download**
 
-## 3.1. XXX and XXX  Output
+## 3.1. Cell Ranger Output
 
 - **Description**: This section includes the output files from Cell Ranger, essential for the initial data processing and analysis of single-cell RNA and B-cell receptor data.
 - **Download**: These files are available for access and download from the [GEO GSE279004](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279004).
