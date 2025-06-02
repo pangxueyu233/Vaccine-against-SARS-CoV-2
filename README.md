@@ -19,7 +19,7 @@ The accompanying scripts are organized into modular chapters that mirror the exp
 - **[Chapter 0](Chapter0.md): Pre-processing of scRNA data**
   - This chapter includes scripts for initial processing of scRNA-seq and scVDJ-seq datasets, such as file organization, Cell Ranger count and VDJ alignment, and extraction of gene expression matrices and clonotype annotations.
 - **[Chapter 1](Chapter1.md): scRNA-seq Analysis**
-  - **Content:** This section presents the full scRNA-seq analysis workflow, including data filtering (via `miQC`), normalization, dimensionality reduction (UMAP, tSNE, PHATE, ForceAtlas2), unsupervised clustering, and manual annotation using curated marker gene panels. Additional analyses include dot plot visualizations of lineage-specific genes, identification of differentially expressed genes, and integrated exploration of B and T cell subtypes.
+  - This section presents the full scRNA-seq analysis workflow, including data filtering (via `miQC`), normalization, dimensionality reduction (UMAP, tSNE, PHATE, ForceAtlas2), unsupervised clustering, and manual annotation using curated marker gene panels. Additional analyses include dot plot visualizations of lineage-specific genes, identification of differentially expressed genes, and integrated exploration of B and T cell subtypes.
   
 
 
@@ -104,7 +104,7 @@ Below is a detailed annotation of the file structure and contents:
 
 # **Citation**
 
-Our paper has been published in [*XXX Journal*](https://chat.openai.com/c/xxxx). For further reference and details, you can access the publication at the provided link.
+Our paper has been published in [*Nature Biomedical Engineering*](https://chat.openai.com/c/xxxx). For further reference and details, you can access the publication at the provided link.
 
 The raw data supporting the findings of this study can be downloaded from the following repositories:
 
